@@ -1,58 +1,136 @@
 <!DOCTYPE html>
 
-	<head>
+    <head>
         
         <title>Boost Linguistics</title>
         <meta charset="utf-8">
-  		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=No">
+        
+        <!--<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <style type="text/css">
             
             body{
 
-                font-family: 'Rubik', sans-serif;
+                font-family: 'Rubik', 'Open-Sans', sans-serif;
 
             }
+
+            .rubik-font{
+
+                font-family: 'Rubik', 'Open-Sans';
+
+            }
+
+            a:-webkit-any-link {
+                color: none;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            a#link-1:hover{
+                color:#f19201;
+                text-decoration:none; 
+                  
+            }
+
+            a#link-2:hover{
+                color:#f16e3a;
+                text-decoration: none;
+                font-weight: bolder; 
+                font-size: 17px;
+                  
+            }
+
+            a#link-3:hover{
+                color:#f16e3a;
+                text-decoration:underline; 
+                font-weight: bolder;
+                  
+            }
+
+            a#link-4:hover{
+                color:white;
+                font-weight: 700;
+                text-decoration: underline;
+                  
+            }
+
+            button#button-1:hover{
+
+                background-color: white;
+                color:#f16e3a;
+                text-decoration:none; 
+
+            }
+
+            .open-sans{
+
+                font-family: "open-sans";
+
+            }
+
             #nav{
 
                 width: 100%;
                 float: left;
                 margin: 0 0 1em 0;
                 padding: 0;
+                color: #f16e3a;
 
             }
 
-            #nav li{
+
+            .add-spacing{
+
+                padding: 10px 0;
+
+            }
+
+            .add-more-spacing{
+
+                padding: 30px 0 50px;
+
+            }
+
+
+            li{
 
                 float: right;
                 display: block;
-                padding: 8px 15px 5px;
+                padding: 8px 8px 5px;
                 text-decoration: none;
-                font-weight: bold;
-                font-size: 18px;
+                /*font-weight: 400;*/
+                font-size: 16px;
             }
 
             a{
 
-                text-decoration: none;
-                color: black;
+                color: inherit;
 
             }
+
 
             #sign-up{
 
                 border-radius: 100px;
                 width: 105px;
                 height: 32px;
-                font-size: 18px;
-                font-weight: 500;
+                font-size: 16px;
+                /*font-weight: 500;*/
+                background-color: #f16e3a;
+                border-color: #f16e3a;
 
             }
 
             .Boost-master-logo_gray{
 
-                width:113px;
+                width:125px;
                 height:52px;
                 float: left;
                 padding: 8px 15px 3px;
@@ -60,41 +138,17 @@
 
             }
 
+
             .jumbotron{
 
-                /**temporary**/
-                background-color: #eeeeee;
-
-                background-image: url(bitmap.svg);
+                background-color: black;
+                background-image: url(bitmap.png);
                 width: 100%;
+                position: relative;
                 float: left;
                 padding: 0;
                 margin:0;
-
-            }
-
-            h1{
-
-                font-size: 48px;
-                padding: 0;
-                margin: 0;
-
-            }
-
-            h3{
-
-                padding: 0;
-                font-size: 30px;
-                font-weight: normal;
-
-            }
-
-            .vertically-centered-indented{
-
-
-                padding: 140px 0;
-                margin-left: 100px;
-
+                border-radius: 0px;
 
             }
 
@@ -104,40 +158,126 @@
 
             }
 
-            .create-account-button{
+            h1{
+
+                font-size: 36px;
+                padding: 0;
+                color: white;
+
+            }
+
+            h3{
+
+                padding: 0;
+                font-size: 22px;
+                font-weight: normal;
+                font-family: "Open Sans";
+                color: white;
+
+            }
+
+            .vertically-centered-indented{
+
+
+                padding: 100px 0 140px;
+                margin-left: 100px;
+
+
+            }
+
+            .jumbotron-buttons{
+
+                border-radius: 37px;
+                font-size: 26px;
+                padding: .1em 1em;
+
+            }
+
+            .smaller-buttons{
 
                 border-radius: 37px;
                 font-size: 20px;
-                font-weight: 500;
-                padding: .75em 3em;
+                padding: .1em 1em;
 
             }
 
-            #fine-print{
+            .clear-buttons{
 
-                font-size: 10px;
+                background-color: transparent;
+                border-color: white;
 
             }
 
-            .understand-boost-editor{
+            .icon-bg{
+
+                background-image: linear-gradient(to right, #f19200, #f16e3a);
+                width: 100%;
+                float: left;
+                padding: 0;
+                margin:0;
+                padding: 60px 0;
+
+            }
+
+
+            .pen-icon{
+
+                width: 78px;
+                height: 100px;
+
+            }
+
+            .computer-icon{
+
+                width: 115px;
+                height: 100px;
+            }
+
+            table{
+
+                width: 90%;
+
+            }
+
+            td{
+
+                padding: 5px 40px;
+
+            }
+
+
+            .understand-boost{
 
                 width: 100%;
                 float: left;
                 margin:0;
-                padding-top: 40px;
-                padding-bottom: 80px;
+                padding: 80px 0;
+
+            }
+
+            .logo-and-boost{
+
+                display: inline;
 
             }
 
             h2{
 
-                font-size: 36px;
+                font-size: 27px;
+                /*font-weight: 500;*/
 
             }
 
             p{
 
-                font-size: 20px;
+                font-size: 16px;
+                font-family: "Open-Sans";
+
+            }
+
+            iframe{
+
+                width: 100%;
 
             }
 
@@ -149,34 +289,151 @@
 
             h4{
 
-                font-size: 24px;
-                font-weight: bold;
+                font-size: 20px;
 
             }
 
-            #editor-icon{
+            .partners-bg{
 
-                width: 56px;
-                height: 56px;
-                padding-right: 10px;
-
-            }
-
-            .logo-and-boost{
-
-                display: inline;
+                background-color: #fafafa;
+                text-align: center;
+                width: 100%;
+                float: left;
+                margin:0;
+                padding: 20px 0 20px 0;
 
             }
 
-            table{
+            .create-your-account{
 
-                width: 90%;
+                background-color: #f16e3a;
+                text-align: center;
+                width: 100%;
+                float: left;
+                margin:0;
+                padding: 40px 0 20px 0;
 
             }
 
-            #preview-macbookgold-front{
+            .create-account-button{
+
+                border-radius: 37px;
+                font-size: 20px;
+                /*font-weight: 500;*/
+                padding: .75em 3em;
+
+            }
+
+            .create-account-jumbotron-button{
+
+                border-radius: 37px;
+                font-size: 16px;
+                padding: .75em 3em;
+
+            }
+
+            #fine-print{
+
+                font-size: 10px;
+                font-family: "Open-Sans";
+
+            }
+
+            .bottom-links{
+
+                text-align: center;
+                width: 100%;
+                float: left;
+                margin:0;
+                padding: 20px 0 20px 0;
+                font-family: 
+
+            }
+
+            #link-headings{
+
+                /*font-weight: bolder;*/
+
+            }
+
+            .copyright{
+
+                padding: 20px 0 10px 0;
+
+            }
+
+            .footer-logos{
+
+                width: 40px;
+                height: 30px;
+                border-radius: 100%;
+                padding: 0 5px;
+
+            }
+
+            .footer-padding{
+
+                padding-bottom: 10px;
+
+            }
+
+            .orange-font{
+
+                color: #f16e3a;
+
+            }
+
+            .white-font{
+
+                color: white;
+
+            }
+
+            .another-orange{
+
+                color: #f19201;
+
+            }
+
+            .footer-font{
+
+                font-family: "Open-Sans";
+                color: #f16e3a;
+
+            }
+
+            .container{
 
                 width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                align-items: center;
+
+            }
+
+            .spaced-apart{
+
+                padding: 20px;
+
+            }
+
+            .partner-width{
+
+                width: 250px;
+
+            }
+
+            .jumbotron-spacing{
+
+                padding: 0px 0px 10px;
+
+
+            }
+
+            .shadow{
+
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 
             }
 
@@ -186,13 +443,20 @@
 
             }
 
+            #center-fine-print{
+
+                float: left;
+                text-align: center;
+
+            }
+
             .emotions-bg{
 
                 text-align: center;
                 width: 100%;
                 float: left;
                 margin:0;
-                padding: 60px 0 80px 0;
+                padding: 40px 0 80px 0;
 
             }
 
@@ -214,92 +478,18 @@
 
             }
 
-            .editing-tool-bg{
-
-                text-align: center;
-                width: 100%;
-                float: left;
-                margin:0;
-                padding: 100px 0 80px 0;
-
-            }
-
-            .border{
-
-                border-radius: 10px;
-                border: solid 1px #979797;
-                padding: 30px 15px;
-
-            }
-
-            .create-your-account{
-
-                /**temporary**/
-                background-color: #cccccc;
-
-                text-align: center;
-                width: 100%;
-                float: left;
-                margin:0;
-                padding: 20px 0 20px 0;
-
-            }
-
-            #center-fine-print{
-
-                float: left;
-                text-align: center;
-
-            }
-
-            #fine-print{
-
-                font-size: 10px;
-
-            }
-
-            .bottom-links{
-
-                text-align: center;
-                width: 100%;
-                float: left;
-                margin:0;
-                padding: 40px 0 20px 0;
-
-            }
-
-            #link-headings{
-
-                font-weight: bolder;
-
-            }
-
-            .copyright{
-
-                padding: 20px 0 10px 0;
-
-            }
-
-            .footer-logos{
-
-                width: 30px;
-                height: 30px;
-                border-radius: 100%;
-                padding: 0 5px;
-
-            }
-
-            .footer-padding{
-
-                padding-bottom: 10px;
-
-            }
-
             hr{
 
-                width: 30%;
+                width: 20%;
+                margin-top: 100px; 
+                margin-bottom: 0; 
+                padding: 0;
+                height:0; 
+                border:0; 
+                border-top:1px solid #f16e3a;
 
             }
+
 
         </style>
   
@@ -308,109 +498,123 @@
 
     <body>
 
-    	<nav id="nav">
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    		<img src="boost-logo.svg" class="Boost-master-logo_gray">
-    		<ul>
 
-	    		<li><button type="button" id="sign-up"><a href = "">Sign up</a></button></li>
-	    		<li><a href = "">Sign In</a></li>
-	    		<li><a href = "">Blog</a></li>
-	    		<li><a href = "">API</a></li>
-	    		<li><a href = "">Editor</a></li>
-	    	
+        <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+          <a href=""><img src="boost-master-logo.png" class="Boost-master-logo_gray navbar-brand d-flex mr-auto"></a> 
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <nav class="navbar-collapse collapse" id="collapsingNavbar3">
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a id="link-3" class="nav-link orange-font" style="color: #f16e3a;" href="#">Editor</a>
+              </li>
+              <li class="nav-item">
+                <a id="link-3" class="nav-link orange-font" style="color: #f16e3a;" href="#">API</a>
+              </li>
+              <li class="nav-item">
+                  <a id="link-3" class="nav-link orange-font" style="color: #f16e3a;" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                  <a id="link-3" class="nav-link orange-font" style="color: #f16e3a;" href="#">Sign In</a>
+              </li>
+              <li style="margin-top: 2px;" class="nav-item">
+                  <button style="padding: 4px;" class="nav-link my-2 my-sm-0" type="button" id="sign-up"><a id="link-4" class="white-font" href = "">Sign up</a></button>
+              </li>
+            </ul>
+          </nav>
+        </nav>
 
-    		</ul>
+      <section class="jumbotron" style="margin-bottom: 0px;">
+        
+        <div class="vertically-centered-indented">
+          
+          <h1>Empower your team with AI.</h1>
+          <h1>Increase efficiency.</h1>
+          <h1>Save time.</h1>
+          <h3 id="jumbotron-h3" class="add-spacing">Optimize marketing content for emotions that drive customer engagement.</h3>
+          <div id="center-fine-print">
+            <a id="link-1" class="white-font" href = ""><button type="button" id="button-1" class="create-account-jumbotron-button clear-buttons white-font">Create your account</button></a>
+            <p style="font-family: Open Sans;" id="fine-print" class="white-font">No credit card required</p>
+          </div>
 
-    	</nav>
+        </div>
+        
 
-        <section class="jumbotron">
+      </section>
+
+      <section class="understand-boost">
+        
+        <table align="center">
+
+          <tr>
             
-            <div class="vertically-centered-indented">
-                
-                <h1>Empower your team with AI.</h1>
-                <h1>Increase efficiency.</h1>
-                <h1>Save time.</h1>
-                <h3 id="jumbotron-h3">Optimize marketing content for emotions that drive customer engagement.</h3>
-                <div id="center-fine-print">
-                    <button type="button" class="create-account-button"><a href = "">Create your account</a></button>
-                    <p id="fine-print">No credit card required</p>
-                </div>
+            <td class="understand-boost-columns">
 
-            </div>
+              <img class = "logo-and-boost" id="editor-icon" src="editor-icon.svg">
+              <h4 class = "logo-and-boost">Boost Editor</h4>
+              <h2 class="orange-font add-spacing">The artificial intelligence your content can't live without</h2>
+              <p style="font-family: Open Sans;">Calling all content marketers, this one's for you. Boost Editor - a text editor that easily integrates with your content creation by helping you optimize your language to drive audience engagement.</p>
+              <h4 class="orange-font"><a id = "link-3" href="">Watch the video</a></p>
+
+            </td>
+
+            <td class="understand-boost-columns"><img style="width: 100%;" src="macbookgold.png"></td>
+
+          </tr>
+
+
+        </table>
+
+       <hr>
+
+      </section>
+
+
+      <section class="emotions-bg">
             
-        </section>
-
-        <section class="understand-boost-editor">
-            
-            <table align="center">
-
-                <tr>
-                    
-                    <td class="understand-boost-columns">
-
-                       
-                            
-                            <img class = "logo-and-boost" id="editor-icon" src="editor-icon.svg">
-                            <h4 class = "logo-and-boost">Boost Editor</h4>
-
-                       
-                        <h2>The artificial intelligence your content can't live without</h2>
-                        <p>Calling all content marketers, this one's for you. Boost Editor - a text editor that easily integrates with your content creation by helping you optimize your language to drive audience engagement.</p>
-                        <p class="bold"><a href="">Watch the video</a></p>
-
-                    </td>
-
-                    <td class="understand-boost-columns"><img id="preview-macbookgold-front" src="preview_macbookgold_front.svg"></td>
-
-                </tr>
-
-
-            </table>
-
-        </section>
-
-         <hr>
-
-        <section class="emotions-bg">
-            
-            <h2>Emotion and the Buyer's Journey</h2>
-            <p>There are no good or bad emotions - they all play a role in a customer's relationship with your brand.</p>
+            <h2 class="orange-font">Emotion and the Buyer's Journey</h2>
+            <p style="font-family: Open Sans">There are no good or bad emotions - they all play a role in a customer's relationship with your brand.</p>
 
             <table id="table-width" align="center">
 
                 <tr>
                     
-                    <td id="column-width" align="left"><span id="large-font">Joy</span> increases social sharing. Optimize your tone for joy in your blog posts and social media captions to increase your brand reach.</td>
-                    <td id="column-width" align="left"><img src="joy.svg"></td>
+                    <td id="column-width" align="left"><p style="font-family: Open Sans"><span style="font-family: Rubik" class="orange-font" id="large-font">Joy</span> increases social sharing. Optimize your tone for joy in your blog posts and social media captions to increase your brand reach.</p></td>
+                    <td id="column-width" align="left"><img src="joy.png"></td>
 
                 </tr>
 
                 <tr>
                     
-                    <td id="column-width" align="right"><img src="sadness.svg"></td>
-                    <td id="column-width" align="left"><span id="large-font">Sadness</span> fosters empathy between your audience and your brand. Use a sad tone for content that reaches your visitiors that you want to covert into leads.</td>
+                    <td id="column-width" align="right"><img src="sadness.png"></td>
+                    <td id="column-width" align="left"><p style="font-family: Open Sans"><span style="font-family: Rubik" class="orange-font" id="large-font">Sadness</span> fosters empathy between your audience and your brand. Use a sad tone for content that reaches your visitiors that you want to covert into leads.</p></td>
 
                 </tr>
 
                 <tr>
                     
-                   <td id="column-width" align="left"><span id="large-font">Fear</span> catalyzes a purchasing decision. Ever seen one of those lightning sales on Amazon? Yeah, that's what we're talking about. Use this when working with a lead that you want to convert.</td>
-                    <td id="column-width" align="left"><img src="fear.svg"></td>
+                   <td id="column-width" align="left"><p style="font-family: Open Sans"><span style="font-family: Rubik" class="orange-font" id="large-font">Fear</span> catalyzes a purchasing decision. Ever seen one of those lightning sales on Amazon? Yeah, that's what we're talking about. Use this when working with a lead that you want to convert.</p></td>
+                    <td id="column-width" align="left"><img src="fear.png"></td>
 
                 </tr>
 
                 <tr>
                     
-                    <td id="column-width" align="right"><img src="anger.svg"></td>
-                    <td id="column-width" align="left"><span id="large-font">Anger</span> is proven to solidify a customer's purchasing decision. Use it in your confirmation emails and existing customer communications.</td>
+                    <td id="column-width" align="right"><img src="anger.png"></td>
+                    <td id="column-width" align="left"><p style="font-family: Open Sans"><span style="font-family: Rubik" class="orange-font" id="large-font">Anger</span> is proven to solidify a customer's purchasing decision. Use it in your confirmation emails and existing customer communications.</p></td>
 
                 </tr>
 
                 <tr>
                     
-                    <td id="column-width" align="left"><span id="large-font">Disgust</span> also helps solidify customers' purhcasing decision. Use it when comparing your brand to competitors</td>
-                    <td id="column-width" align="left"><img src="disgust.svg"></td>
+                    <td id="column-width" align="left"><p style="font-family: Open Sans"><span style="font-family: Rubik" class="orange-font" id="large-font">Disgust</span> also helps solidify customers' purhcasing decision. Use it when comparing your brand to competitors</p></td>
+                    <td id="column-width" align="left"><img src="disgust.png"></td>
 
                 </tr>
 
@@ -418,78 +622,70 @@
 
         </section>
 
-        <hr>
+      <section class="create-your-account">
+        
+        <h2 class="white-font add-spacing">Boost unlimited content for $49/month</h2>
+        <a id="link-1" class="white-font" href = ""><button type="button" id="button-1" class="create-account-button clear-buttons white-font">Create your account</button></a>
+        <p style="font-family:Open Sans;" id="fine-print" class="white-font">Still no credit card required</p>
 
-        <section class="editing-tool-bg">
+      </section>
+
+      <footer class="bottom-links">
+        
+        <table align="center" class="orange-font">
+          
+          <tr align="left" id="link-headings" class="footer-padding">
             
-            <span id="large-font" class="border">The editing tool that will make your customers adore you</span>
+            <td id="bottom-td">Pages</td>
+            <td>Resources</td>
+            <td>Legal</td>
+            <td>Join the community</td>
 
-        </section>
+          </tr>
 
-        <section class="create-your-account">
+          <tr align="left" class="footer-padding">
             
-            <h2>Boost unlimited content for $49/month</h2>
-            <p>Lorem ipsum sin dolor amet...</p>
-            <button type="button" class="create-account-button"><a href = "">Create your account</a></button>
-            <p id="fine-print">Still no credit card required</p>
+            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Home</a></td>
+            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Boost Blog</a></td>
+            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Privacy Policy</a></td>
+            <td rowspan="2">
+              
+              <a href=""><img class = "footer-logos" src="facebook-icon.png"></a>
+              <a href=""><img class = "footer-logos" src="twitter-icon.png"></a>
+              <a href=""><img class = "footer-logos" src="linkedin-icon.png"></a>
 
-        </section>
+            </td>
 
-        <footer class="bottom-links">
+          </tr>
+
+          <tr align="left" class="footer-padding">
             
-            <table align="center">
-                
-                <tr align="left" id="link-headings" class="footer-padding">
-                    
-                    <td id="bottom-td">Pages</td>
-                    <td>Resources</td>
-                    <td>Legal</td>
-                    <td>Join the community</td>
+            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Boost my content</a></td>
+            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Videos</a></td>
+            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Terms of Use</a></td>
+            <td></td>
 
-                </tr>
+          </tr>
 
-                <tr align="left" class="footer-padding">
-                    
-                    <td><a href = "">Home</a></td>
-                    <td><a href = "">Boost Blog</a></td>
-                    <td><a href = "">Privacy Policy</a></td>
-                    <td rowspan="2">
-                        
-                        <a href=""><img class = "footer-logos" src="facebook.svg"></a>
-                        <a href=""><img class = "footer-logos" src="twitter.svg"></a>
-                        <a href=""><img class = "footer-logos" src="linkedin.svg"></a>
-
-                    </td>
-
-                </tr>
-
-                <tr align="left" class="footer-padding">
-                    
-                    <td><a href = "">Boost my content</a></td>
-                    <td><a href = "">Videos</a></td>
-                    <td><a href = "">Terms of Use</a></td>
-                    <td></td>
-
-                </tr>
-
-                <tr align="left" class="footer-padding">
-                    
-                    <td><a href = "">Integrate Boost AI</a></td>
-                    <td><a href = "">Tutorials</a></td>
-                    <td></td>
-                    <td></td>
-
-                </tr>
-
-            </table>
-
-            <table class = "copyright" align="center">
-                
-                <tr><th>Boost Linguistics</th></tr>
-                <tr><td>Made with <img src="love.svg"> in Philly</td></tr>
+          <tr align="left" class="footer-padding">
             
-            </table>
+            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Integrate Boost AI</a></td>
+            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Tutorials</a></td>
+            <td></td>
+            <td></td>
 
-        </footer>
+          </tr>
+
+        </table>
+
+        <table class = "copyright" align="center">
+          
+          <tr><th style="font-family:Open Sans;" class="footer-font">Boost Linguistics &copy;</th></tr>
+          <tr><td style="font-family:Open Sans;" class="footer-font">Made with <img src="love.png"> in Philly</td></tr>
+        
+        </table>
+
+      </footer>
+ 
 
     </body>
