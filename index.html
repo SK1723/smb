@@ -560,7 +560,27 @@
               <h4 class = "logo-and-boost">Boost Editor</h4>
               <h2 class="orange-font add-spacing">The artificial intelligence your content can't live without</h2>
               <p style="font-family: Open Sans;">Calling all content marketers, this one's for you. Boost Editor - a text editor that easily integrates with your content creation by helping you optimize your language to drive audience engagement.</p>
-              <h4 class="orange-font"><a id = "link-3" href="">Watch the video</a></p>
+              <h4 class="orange-font"><a onclick="changeVideo('6jh4iFik7ZI')">Watch the video</a></h4>
+
+              
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                      
+                        <iframe id="iframeYoutube" width="560" height="315" src="https://www.youtube.com/embed/6jh4iFik7ZI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
             </td>
 
@@ -689,3 +709,18 @@
  
 
     </body>
+
+    <script>
+        $(document).ready(function(){
+          $("#myModal").on("hidden.bs.modal",function(){
+            $("#iframeYoutube").attr("src","#");
+          })
+        })
+
+        function changeVideo(vId){
+          var iframe=document.getElementById("iframeYoutube");
+          iframe.src="https://www.youtube.com/embed/"+vId;
+
+          $("#myModal").modal("show");
+        }
+    </script>
