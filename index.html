@@ -179,7 +179,7 @@
             .vertically-centered-indented{
 
 
-                padding: 100px 0 140px;
+                padding: 150px 0 230px;
                 margin-left: 100px;
 
 
@@ -341,12 +341,10 @@
 
             .bottom-links{
 
-                text-align: center;
                 width: 100%;
                 float: left;
                 margin:0;
-                padding: 20px 0 20px 0;
-                font-family: 
+                padding: 20px 0px 20px 80px;
 
             }
 
@@ -358,7 +356,8 @@
 
             .copyright{
 
-                padding: 20px 0 10px 0;
+                padding: 20px 0 50px 0;
+                text-align: center;
 
             }
 
@@ -474,7 +473,7 @@
 
             #large-font{
 
-                font-size: 36px;
+                font-size: 27px;
 
             }
 
@@ -495,6 +494,65 @@
                 width: 200px;
                 height: 40px;
 
+            }
+
+            .row-padding{
+
+                padding: 5px 5px;
+            }
+
+            .bottom-padding{
+
+                padding-bottom: 7px;
+
+            }
+
+            .marketing-insider{
+
+                width: 100%;
+                float: left;
+                margin:0;
+                padding: 80px 0;
+                background-color: #fafafa;
+
+            }
+
+            .get-case-study-button{
+
+                border-color: #f16e3a;
+
+            }
+
+            figcaption{
+
+                font-style: italic;
+                padding: 10px 0;
+
+            }
+
+            .no-padding{
+
+                margin: 0;
+
+            }
+
+            .brenner{
+
+                width: 200px;
+                height: 200px;
+
+            }
+
+            @media (min-width: 768px) {
+              .modal-xl {
+                width: 60%;
+                height: 80%;
+               max-width:1200px;
+              }
+            }
+
+            .modal-header .close{
+                padding: 0 1rem;
             }
 
 
@@ -556,13 +614,9 @@
       </section>
 
       <section class="understand-boost">
-        
-        <table align="center">
 
-          <tr>
-            
-            <td class="understand-boost-columns">
-
+        <div class="row justify-content-center row-padding">
+            <div style="padding-top: 20px;" class="col-sm-5">
               <img class = "logo-and-boost editor-logo" id="editor-icon" src="editor-icon.png">
               <h2 class="orange-font add-spacing">The artificial intelligence your content can't live without</h2>
               <p style="font-family: Open Sans;">Calling all content marketers, this one's for you. Boost Editor - a text editor that easily integrates with your content creation by helping you optimize your language to drive audience engagement.</p>
@@ -570,30 +624,24 @@
 
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                  <div class="modal-dialog" role="document">
+                  <div class="modal-dialog modal-xl" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                       </div>
                       <div class="modal-body">
                       
-                        <iframe id="iframeYoutube" width="560" height="315" src="https://www.youtube.com/embed/6jh4iFik7ZI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+                        <iframe id="iframeYoutube" width="800" height="450" src="https://www.youtube.com/embed/6jh4iFik7ZI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
                         
                       </div>
                     </div>
                   </div>
                 </div>
-
-            </td>
-
-            <td class="understand-boost-columns"><img style="width: 100%;" src="macbookgold.png"></td>
-
-          </tr>
-
-
-        </table>
-
-       <hr>
+            </div>
+            <div class="col-sm-5">
+              <img style="width: 100%;" src="macbookgold.png">
+            </div>
+        </div>
 
       </section>
 
@@ -644,71 +692,183 @@
 
         </section>
 
+      <section class="marketing-insider">
+          
+        <div class="row justify-content-center row-padding">
+            <div style="padding-top: 40px;" class="col-sm-5">
+              <h2 class="orange-font add-spacing">How Marketing Insider Group uses emotion to drive social shares.</h2>
+              <p style="font-family:Open Sans;">One of the most popular marketing blogs out there, Marketing Insider Group's content has been shared thousands of times. Rad about how emotion plays a role in their success.</p>
+              <a id="link-1" class="white-font" href = ""><button type="button" id="button-1" class="create-account-jumbotron-button clear-buttons orange-font get-case-study-button">Get the case study</button></a>
+            </div>
+            <div style="text-align: center;" class="col-sm-5">
+              <figure>
+                  
+                <img class="brenner" src="brenner.png">
+                <figcaption style="font-family: Open Sans">"Great analysis, great tools..."</figcaption>
+                <h4 class="orange-font no-padding">Michael Brenner</h4>
+                <p style="font-family: Open Sans;" class="no-padding">CEO, Marketing Insider Group</p>
+
+              </figure>  
+            </div>
+        </div>
+
+      </section>
+
       <section class="create-your-account">
         
         <h2 class="white-font add-spacing">Boost unlimited content for $49/month</h2>
-        <p style="font-family: Open Sans" class="white-font">Lorem ipsum sin dolor amet...</p>
+        <p style="font-family: Open Sans" class="white-font">Boost three pieces of content for free</p>
         <a id="link-1" class="white-font" href = ""><button type="button" id="button-1" class="create-account-button clear-buttons white-font">Create your account</button></a>
         <p style="font-family:Open Sans;" id="fine-print" class="white-font">Still no credit card required</p>
 
       </section>
 
-      <footer class="bottom-links">
-        
-        <table align="center" class="orange-font">
+       <footer class="bottom-links">
           
-          <tr align="left" id="link-headings" class="footer-padding">
-            
-            <td id="bottom-td">Pages</td>
-            <td>Resources</td>
-            <td>Legal</td>
-            <td>Join the community</td>
+        <div class="row justify-content-center">
 
-          </tr>
+           <div class="col-sm-3">
+               <div class="row justify-content-start orange-font">
+                   
+                    <div class="col-8">  
+                        <p style="font-family: Rubik">Pages</p>
+                    </div>
 
-          <tr align="left" class="footer-padding">
-            
-            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Home</a></td>
-            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Boost Blog</a></td>
-            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Privacy Policy</a></td>
-            <td rowspan="2">
-              
-              <a href=""><img class = "footer-logos" src="facebook-icon.png"></a>
-              <a href=""><img class = "footer-logos" src="twitter-icon.png"></a>
-              <a href=""><img class = "footer-logos" src="linkedin-icon.png"></a>
+                </div>
 
-            </td>
+                <div class="row justify-content-start orange-font">
 
-          </tr>
+                    <div class="col-8 bottom-padding">  
+                        <a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Home</a>
+                    </div>
 
-          <tr align="left" class="footer-padding">
-            
-            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Boost my content</a></td>
-            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Videos</a></td>
-            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Terms of Use</a></td>
-            <td></td>
+                </div>
 
-          </tr>
+                <div class="row justify-content-start orange-font">
 
-          <tr align="left" class="footer-padding">
-            
-            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Integrate Boost AI</a></td>
-            <td><a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Tutorials</a></td>
-            <td></td>
-            <td></td>
+                    <div class="col-8 bottom-padding">  
+                        <a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Boost Content</a>
+                    </div>
 
-          </tr>
+                </div>
 
-        </table>
+                <div class="row justify-content-start orange-font">
 
-        <table class = "copyright" align="center">
-          
-          <tr><th style="font-family:Open Sans;" class="footer-font">Boost Linguistics &copy;</th></tr>
-          <tr><td style="font-family:Open Sans;" class="footer-font">Made with <img src="love.png"> in Philly</td></tr>
-        
-        </table>
+                    <div class="col-8 bottom-padding">  
+                        <a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Integrate Boost</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+               <div class="row justify-content-start orange-font">
+                   
+                    <div class="col-8">  
+                        <p style="font-family: Rubik">Resources</p>
+                    </div>
+
+                </div>
+
+                <div class="row justify-content-start orange-font">
+
+                    <div class="col-8 bottom-padding">  
+                        <a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "" target="_blank">Boost Blog</a>
+                    </div>
+
+                </div>
+
+                <div class="row justify-content-start orange-font">
+
+                    <div class="col-8 bottom-padding">  
+                        <a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "" target="_blank">Videos</a>
+                    </div>
+
+                </div>
+
+                <div class="row justify-content-start orange-font">
+
+                    <div class="col-8 bottom-padding">  
+                        <a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "" target="_blank">Tutorials</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+               <div class="row justify-content-start orange-font">
+                   
+                    <div class="col-8">  
+                        <p style="font-family: Rubik">Legal</p>
+                    </div>
+
+                </div>
+
+                <div class="row justify-content-start orange-font">
+
+                    <div class="col-8 bottom-padding">  
+                        <a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Privacy Policy</a>
+                    </div>
+
+                </div>
+
+                <div class="row justify-content-start orange-font">
+
+                    <div class="col-8 bottom-padding">  
+                        <a style="font-family:Open Sans;" id="link-3" class="orange-font" href = "">Terms of Use</a>
+                    </div>
+
+                </div>
+
+                <div class="row justify-content-start orange-font">
+
+                    <div class="col-8 bottom-padding">  
+                        <p style="font-family: Open Sans"></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+               <div class="row justify-content-start orange-font">
+                   
+                    <div class="col-8">  
+                        <p style="font-family: Rubik">Join the Community</p>
+                    </div>
+
+                </div>
+
+                <div style="padding-left: 6px;" class="row justify-content-start orange-font">
+
+                    <a href="" target="_blank"><img class = "footer-logos" src="facebook-icon.png"></a>
+                    <a href="" target="_blank"><img class = "footer-logos" src="twitter-icon.png"></a>
+                    <a href="" target="_blank"><img class = "footer-logos" src="linkedin-icon.png"></a>
+                </div>
+
+                <div class="row justify-content-start orange-font">
+
+                    <div class="col-8">  
+                        <p style="font-family: Open Sans"></p>
+                    </div>
+
+                </div>
+
+                <div class="row justify-content-start orange-font">
+
+                    <div class="col-8">  
+                        <p style="font-family: Open Sans"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
       </footer>
+
+      <div class="copyright">
+            <span style="font-family: Open Sans; font-weight:bold" class="orange-font">Boost Linguistics &copy;</span> 
+            <p style="font-family: Open Sans" class="orange-font">Made with <img src="love.png"> in Philly</p>
+        </div> 
  
 
     </body>
